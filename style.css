@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: "Lato", sans-serif;
+}
+
+html {
+    color: #000;
+    font-size: 18px;
+    background: #eee;
+}
+
+body {
+    max-width: 40em;
+    margin: 10px auto;
+}
+
+pre, code {
+    white-space: pre-wrap;
+    font-family: monospace;
+    color: #222;
+    font-size: 90%;
+}
+
+span.broken_page_link {
+    color: #800;
+    text-decoration: underline;
+    position: relative;
+}
+
+span.broken_page_link:hover:before {
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    content: "Sorry, this content is not available yet! Please bug me about it.";
+    width: 15em;
+    background: #fdd;
+    padding: 15px;
+    border: 1px solid #f88;
+    z-index: 100;
+}
+
+div.content {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 24px 30px 30px 30px;
+    margin-bottom: 5px;
+}
+
+div.content h1 {
+    margin-bottom: 40px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+div.content h2 {
+    margin: 30px 0 15px 0;
+    color: #666;
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+div.content h2:first-child {
+    margin-top: 0;
+}
+
+div.content a, div.content a * {
+    color: #008;
+    text-decoration: underline;
+}
+
+div.content a:hover {
+    opacity: 0.6;
+}
+
+div.content blockquote {
+    border-left: 2px solid #666;
+    margin-left: 10px;
+    padding: 0 10px;
+}
+
+div.content blockquote * {
+    font-style: italic;
+}
+
+div.content > p, div.content blockquote > p {
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 130%;
+}
+
+div.content ul, div.content ol {
+    padding-left: 30px;
+}
+
+div.content li {
+    width: auto;
+}
+
+div.content > ul p, div.content blockquote > ul p, div.content ul ul li {
+    margin: 8px 0;
+    text-align: justify;
+    line-height: 130%;
+}
+
+div.top {
+    position: relative;
+}
+
+div.back {
+    font-size: 15px;
+    color: #888;
+    text-align: right;
+}
+
+div.back a {
+    color: #88c;
+    cursor: pointer;
+}
+
+div.top div.back {
+    z-index: 50;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+div.bottom div.back {
+    padding-right: 5px;
+}
+
+div.tabs {
+    font-size: 1px;
+    margin: 0 30px -1px 30px;
+}
+
+div.tabs > * {
+    position: relative;
+    z-index: 100;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-transform: uppercase;
+    vertical-align: bottom;
+}
+
+div.tabs a {
+    color: #666;
+    background: #eee;
+    border: 1px solid #ddd;
+    margin: 0 10px 0 10px;
+    padding: 1px 15px 0 15px;
+}
+
+div.tabs a:hover {
+    background: #fff;
+    border-bottom: none;
+    padding-bottom: 1px;
+}
+
+div.tabs span {
+    background: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 5px 25px 1px 25px;
+}
+
+div.bottom p {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    padding: 5px 0;
+}
